@@ -57,3 +57,9 @@ $(".box-video").click(function(){
   iframe.contentWindow.postMessage('{"method":"play"}','*');
   $(this).addClass('open');
 });
+document.querySelector('.navbar-toggler').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.toggle('show');
+});
+document.querySelector('.header__toggleIconClose').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.remove('show');
+});
