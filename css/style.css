@@ -161,7 +161,7 @@ nav{
 }
 /* =============================================== happy-clients Styles ========================================= */
 .happy-clients{
-    padding-top: 90px;
+    padding-top: 170px;
 }
 .happy-clients h3{
     margin-bottom: 40px;
@@ -254,16 +254,6 @@ nav{
     background-position: center;
     background-size: cover;
     z-index: 2;
-}
-.bg-video::after{ 
-    content:'';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.1);
-    z-index: 3;
 }
 .box-video .bt-play {
     position: absolute;
