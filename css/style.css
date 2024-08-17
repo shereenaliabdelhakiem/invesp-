@@ -64,6 +64,9 @@ h3{
         color: var(--white-color);
     }
 }
+.container{
+    padding-inline: 24px;
+}
 /* =============================================== happy-clients Styles ========================================= */
 .header{
     background-image: url(../imgs/header-bg.svg);
