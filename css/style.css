@@ -509,6 +509,7 @@ nav{
 }
 .contact .container{
     max-width: 584px;
+    margin-inline: auto;
 }
 .contact h3{
     margin-bottom: 65px;
@@ -559,6 +560,9 @@ footer .copyright{
     display: none;
 }
 @media(max-width: 991px){
+    .container{
+        padding-inline: 54px;
+    }
     .navbar-toggler{
         display: block;
         background: transparent;
@@ -655,11 +659,6 @@ footer .copyright{
     .the-best .thebest-boxs{
         width: 100%;
     }
-}
-@media (max-width: 767px) {
-    .container{
-        padding-inline: 24px;
-    }
     /* footer */
     footer{
         background-color: var(--main-color);
@@ -702,10 +701,6 @@ footer .copyright{
     }
     footer li a{
         font-size: 14px;
-    }
-    h3:not(.fz-34){
-        /* font-size: 22px; */
-        font-size: 18px;
     }
     .contact p{
         font-size: 15px;
@@ -928,18 +923,315 @@ footer .copyright{
         line-height: 24px;
     }
 }
+@media (max-width: 767px) {
+    .container{
+        padding-inline: 24px;
+    }
+    h3:not(.fz-34){
+        font-size: 18px;
+    }
+    /* footer
+    footer{
+        background-color: var(--main-color);
+        padding-top: 35px;
+        padding-bottom: 24px;
+    }
+    footer .row{
+        gap: 32px;
+    }
+    footer h5{
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+    footer .copyright{
+        text-align: center;
+        font-size: 15px;
+        margin-top: 25px;
+        color: var(--white-color);
+    }
+    .contact-details{
+        order: 1;
+    }
+    .footer-services{
+        order: 2;
+    }
+    .footer-services + .footer-industry{
+        order: 3;
+    }
+    .footer-industry + .footer-industry{
+        order: 4;
+    }
+    footer .contact-details p:has( a) {
+        margin-bottom: 21px;
+    }
+    footer .contact-details img {
+        margin-bottom: 10px;
+    }
+    footer h5, footer li a{
+        color: var(--white-color);
+    }
+    footer li a{
+        font-size: 14px;
+    }
+    h3:not(.fz-34){
+        font-size: 18px;
+    }
+    .contact p{
+        font-size: 15px;
+        margin-bottom: 24px;
+        padding-inline: 33px;
+    }
+    .contact h3{
+        margin-bottom: 21px;
+    }
+    .contact p{
+        margin-bottom: 18px;
+    }
+    .main-btn{
+        font-size: 16px;
+        padding: 10px 52px;
+    }
+    h3.fz-34{
+        font-size: 18px;
+        line-height:26px;
+    }
+    .working-together .increase-rate{
+        font-size: 22px;
+    }
+    .working-together .feedback p + img{
+        max-width: 120px;
+        margin-block: 8px;
+    }
+    .box-video .bt-play{
+        width: 40px;
+        height: 26px;
+    }
+    .happy-clients .swiper-slide{
+        margin-right: 10px;
+    }
+    .happy-clients h3{
+        margin-bottom: 24px;
+    }
+    .happy-clients {
+        padding-top: 26px;
+    }
+    .happy-clients .swiper-slide img{
+        width: 150px;
+        height: 80px;
+    }
+    .box-video .bt-play:after{
+        border-width: 7px 0 7px 15px;
+    }
+    .working-together .increase-rate + span{
+        font-size: 16px;
+    }
+    .working-together em{
+        margin-bottom: 16px;
+        line-height: 24px;
+        font-size: 14px;
+    }
+    .working-together em + img{
+        width: 50px;
+        height: 30px;
+    }
+    .working-together .speaker-name{
+        font-size: 17px;
+        margin-bottom: 0;
+    }
+    .working-together .speaker-name + span{
+        font-size: 13px;
+    }
+    .track-record h3{
+        margin-bottom: 32px;
+    }
+    .track-record .track-box{
+        padding: 20px;
+    }
+    .track-record .row{
+        gap: 14px;
+    }
+    .track-record .track-box h4{
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .track-record .track-box img {
+        width: 80.89px;
+        height: 70.89px;
+    }
+    .track-record .track-box p{
+        font-size: 14px;
+    }
+    .working-together{
+        padding-top: 25px;
+    }
+    .track-record{
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .team .row, .best-cro .row{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .the-best .thebest-boxs{
+        gap: 16px;
+    }
+    .the-best .thebest-boxs .thebest-box{
+        width: calc(50% - 16px);
+    }
+    .team-position{
+        width: 50%;
+        padding-right: 12px;
+        gap: 4px;
+        margin-bottom: 30px;
+    }
+    .team .section-text p{
+        margin-block: 18px;
+        font-size: 15px;
+    }
+    .team-position img {
+        width: 70px;
+        height: 50px;
+    }
+    .team-position span{
+        line-height: 28px;
+        font-size: 14px;
+    }
+    .best-cro .best-cro-box.lh{
+        line-height: 60px;
+    }
+    .best-cro .best-cro-box.pt{
+        padding-top: 10px;
+    }
+    .best-cro .best-cro-box{
+        height: 60px;
+        font-size: 15px;
+        width: 80%;
+        text-align: left;
+        padding-left: 40px;
+        margin-bottom: 14px;
+        margin-inline: auto;
+    }
+    .best-cro .best-cro-box img{
+        width: 65px;
+        height: 65px;
+        left: -30px;
+    }
+    .team{
+        padding-bottom: 0; 
+    }
+    .best-cro{
+        padding-block: 30px;
+    }
+    .best-cro h3{
+        margin-bottom: 20px;
+    }
+    .best-cro .main-btn{
+        margin-top: 17px;
+    }
+    .case-studies h3{
+        margin-bottom: 20px;
+        padding-inline: 16px;
+    }
+    .case-studies{
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .case-studies .swiper-slide a{
+        padding-inline: 54px;
+    }
+    .case-studies .swiper-button-next, .swiper-button-prev{
+        width: 30px;
+        height: 30px;
+        &:after{
+            font-size: 14px;
+        }
+    }
+    .case-studies .swiper-button-next{
+        right: 16px;
+    }
+    .case-studies .swiper-button-prev{
+        left: 16px;
+    }
+    .thebest-box{
+        padding: 12px;
+    }
+    .thebest-box h4 {
+        font-size: 21px;
+        line-height: 25px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+    .video-area{
+        text-align: center;
+    }
+    .video-area h4{
+        line-height: 23px;
+        font-size: 16px;
+        margin-top: 14px;
+        margin-bottom: 10px;
+    }
+    .video-area .speaker-name{
+        font-size: 14px;
+        margin-right: 4px;
+    }
+    .video-area .speaker-name + span{
+        font-size: 12px;
+    }
+    .video-area .speaker-name + span + img{
+        margin-inline: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        max-width: 90px;
+    }
+    .the-best{
+        margin-top: 40px;
+    }
+    .the-best .row{
+        gap: 32px;
+        .video-area{
+            order: 2;
+        }
+    }
+    .main-anchor{
+        font-size: 14px;
+        line-height: 24px;
+    } */
+}
 @media (min-width: 768px){
+    .working-together h3{
+        max-width: 786px;
+        margin-inline: auto;
+        margin-bottom: 62px;
+    }
+}
+@media (min-width: 768px) and (max-width:991px){
+    .track-record .row{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .track-record .track-box {
+        width: calc(50% - 12px);
+    }
+    .hero-form{
+        max-width: 540px;
+        margin-inline: auto;
+    }
+    h3{
+        font-size: 28px;
+        line-height: 30px;
+    }
+    h3.fz-34{
+        font-size: 23px;
+        line-height: 38px;
+    }
+}
+@media (min-width: 991px) {
     h3:not(.fz-34){
         font-size: 36px;
         line-height: 43px;
     }
     h3.fz-34{
         font-size: 34px;
-    }
-    .working-together h3{
-        max-width: 786px;
-        margin-inline: auto;
-        margin-bottom: 62px;
     }
     .track-record .track-box img{
         width: 113.89px;
@@ -965,11 +1257,6 @@ footer .copyright{
         min-width: 201px;
         height: 201px;
     }
-}
-@media (min-width: 991px) {
-    .the-best .thebest-boxs{
-        width: calc(40% - 20px);
-    }
     .hero-form{
         position: absolute;
         max-width: 539px;
@@ -978,10 +1265,6 @@ footer .copyright{
         right: 0;
         padding: 50px 53px 20px;
         width: fit-content;
-    }
-    .container{
-        width: 1200px;
-        margin-inline: auto;
     }
     footer{
         padding-top: 45px;
@@ -993,9 +1276,6 @@ footer .copyright{
     footer .container{
         padding-left: 78px;
         width: 100%;
-    }
-    footer .contact-details{
-        padding-left: 74px;
     }
     footer .row{
         gap: 80px;
@@ -1012,6 +1292,67 @@ footer .copyright{
     .row{
         flex-wrap: wrap;
     }
+
+}
+@media(min-width: 992px) and (max-width: 1200px){
+    .container{
+        padding-inline: 40px;
+    }
+    .hero-text h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .hero-text div{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .hero-form{
+        padding: 32px 32px 20px;
+        max-width: 500px;
+    }
+    .nav-links a{
+        font-size: 16px;
+    }
+    .hero-text p{
+        max-width: 330px;
+    }
+    .thebest-boxs{
+        gap: 20px;
+        justify-content: center;
+    }
+    .best-cro .row{
+        gap: 80px;
+    }
+    .best-cro .best-cro-box{
+        width: calc(40% - 40px);
+        margin-block-end: 20px;
+    }
+    .the-best .row .video-area{
+        order: 2;
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+        span + img{
+            margin-inline: auto;
+        }
+    }
+    .thebest-box.mr-24{
+        margin-right: 24px;
+    }
+    footer li a{
+        font-size: 14px;
+    }
+    footer .row{
+        gap: 20px;
+    }
+    footer .row > * {
+        width: calc(25% - 20px);
+    }
+}
+@media(min-width: 1200px){
+    .the-best .row{
+        gap: 80px;
+    }
     .best-cro .best-cro-box{
         text-align: left;
         padding-left: 70px;
@@ -1019,17 +1360,20 @@ footer .copyright{
     .best-cro .best-cro-box.mr-80{
         margin-right: 80px;
     }
-    .thebest-box.mr-24{
-        margin-right: 24px;
-    }
     .best-cro .best-cro-box.mt-66{
         margin-top: 66px;
     }
-    .the-best .row{
-        gap: 80px;
-    }
     .video-area{
         width: calc(55% - 20px);
+    }
+    .the-best .thebest-boxs{
+        width: calc(40% - 20px);
+    }
+    footer .contact-details{
+        padding-left: 74px;
+    }
+    .container{
+        padding-inline: 48px;
     }
 }
 @media(min-width: 1400px){
@@ -1037,5 +1381,10 @@ footer .copyright{
         .container{
             width: 1260px;
         }
+    }
+    .container{
+        width: 1200px;
+        margin-inline: auto;
+        padding-inline: unset;
     }
 }
