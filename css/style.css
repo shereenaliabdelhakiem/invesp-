@@ -1386,6 +1386,6 @@ footer .copyright{
         padding-inline: unset;
     }
     .header .container{
-        min-width: 1260px !important;
+        width: 1260px !important;
     }
 }
