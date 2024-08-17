@@ -1380,14 +1380,12 @@ footer .copyright{
     }
 }
 @media(min-width: 1400px){
-    header{
-        .container{
-            width: 1260px;
-        }
-    }
     .container{
         width: 1200px;
         margin-inline: auto;
         padding-inline: unset;
+    }
+    .header .container{
+        min-width: 1260px !important;
     }
 }
