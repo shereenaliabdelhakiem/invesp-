@@ -51,12 +51,17 @@ function countUp() {
       }
     );
 }
-$(".box-video").click(function(){
-  var iframe = $('iframe',this)[0];
-  iframe.src += "&amp;autoplay=1";
-  iframe.contentWindow.postMessage('{"method":"play"}','*');
-  $(this).addClass('open');
+document.querySelectorAll('.box-video').forEach(function(box) {
+  box.addEventListener('click', function() {
+    var iframe = this.querySelector('iframe');
+    if (iframe) {
+      iframe.src += (iframe.src.indexOf('?') === -1 ? '?' : '&') + "autoplay=1";
+      iframe.contentWindow.postMessage('{"method":"play"}', '*');
+    }
+    this.classList.add('open');
+  });
 });
+
 document.querySelector('.navbar-toggler').addEventListener('click', function() {
   document.querySelector('.nav-links').classList.toggle('show');
 });

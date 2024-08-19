@@ -970,9 +970,6 @@ footer .copyright{
     h3.fz-34{
         font-size: 34px;
     }
-    .the-best .thebest-boxs {
-        width: calc(40% - 20px);
-    }
     .thebest-box.mr-24 {
         margin-right: 24px;
     }
@@ -1093,6 +1090,9 @@ footer .copyright{
     }
 }
 @media(min-width: 1200px){
+    .the-best .thebest-boxs {
+        width: calc(40% - 20px);
+    }
     .the-best .row{
         gap: 80px;
     }
