@@ -42,10 +42,10 @@ a{
     font-size: 18px;
     color: rgb(6, 16, 253);
     line-height: 32px;
-    img{
-        margin-bottom: -3px;
-        margin-left: 8px;
-    }
+}
+.main-anchor img{
+    margin-bottom: -3px;
+    margin-left: 8px;
 }
 h5{
     font-size: 18px;
@@ -60,9 +60,9 @@ h3{
     background-size: cover;
     background-position-x: center;
     background-color: #00153D;
-    h3{
-        color: var(--white-color);
-    }
+}
+.dark-bg h3{
+    color: var(--white-color);
 }
 .container{
     padding-inline: 24px;
@@ -115,10 +115,10 @@ nav{
     margin-bottom: 24px;
     display: flex;
     gap: 16px;
-    img{
-        width: 31px;
-        height: 31px;
-    }
+}
+.hero-text div img{
+    width: 31px;
+    height: 31px;
 }
 .hero-form{
     background-color: var(--white-color);
@@ -146,9 +146,9 @@ nav{
     line-height: 18px;
     padding-left: 15px;
     padding-right: 15px;
-    &:focus{
-        outline: none;
-    }
+}
+.hero-form .form-control:focus{
+    outline: none;
 }
 .hero-form .main-btn{
     border-radius: 5px;
