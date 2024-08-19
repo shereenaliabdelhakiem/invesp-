@@ -491,11 +491,6 @@ nav{
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 15px;
-    /* & + span{
-        font-size: 18px;
-        font-weight: 100;
-        font-style: italic;
-    } */
 }
 .working-together .speaker-name + span{
     font-size: 18px;
@@ -1086,6 +1081,15 @@ footer .copyright{
     }
     footer .row > * {
         width: calc(25% - 20px);
+    }
+    .case-studies .swiper-slide a{
+        max-width: 750px;
+    }
+    .case-studies .swiper-button-next{
+        right: 26px;
+    }
+    .case-studies .swiper-button-prev{
+        left: 26px;
     }
 }
 @media(min-width: 1200px){
