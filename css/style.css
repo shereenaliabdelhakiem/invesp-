@@ -126,41 +126,41 @@ nav{
     box-shadow: 0px 4px 43px rgba(214, 214, 214, 0.33);
     border-radius: 15px;
     position: relative;
-    h4{
-        font-size: 24px;
-        font-weight: 400;
-        text-transform: capitalize;
-        color: var(--secondary-color);
-        margin-bottom: 14px;
+}
+.hero-form h4{
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    margin-bottom: 14px;
+}
+.hero-form .form-control{
+    display: block;
+    border: 1px solid #D6D6D6;
+    background-color: #ffffff;
+    border-radius: 3px;
+    font-size: 18px;
+    height: 56px;
+    width: 100%;
+    margin-bottom: 24px;
+    line-height: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    &:focus{
+        outline: none;
     }
-    .form-control{
-        display: block;
-        border: 1px solid #D6D6D6;
-        background-color: #ffffff;
-        border-radius: 3px;
-        font-size: 18px;
-        height: 56px;
-        width: 100%;
-        margin-bottom: 24px;
-        line-height: 18px;
-        padding-left: 15px;
-        padding-right: 15px;
-        &:focus{
-            outline: none;
-        }
-    }
-    .main-btn{
-        border-radius: 5px;
-        margin-top: 28px;
-        margin-bottom: 32px;
-        width: 100%;
-    }
-    p{
-        font-weight: 300;
-        line-height: 26px;
-        text-align: center;
-        color: var(--secondary-color)
-    }
+}
+.hero-form .main-btn{
+    border-radius: 5px;
+    margin-top: 28px;
+    margin-bottom: 32px;
+    width: 100%;
+}
+.hero-form p{
+    font-weight: 300;
+    line-height: 26px;
+    text-align: center;
+    color: var(--secondary-color)
 }
 /* =============================================== happy-clients Styles ========================================= */
 .happy-clients{
@@ -227,15 +227,15 @@ nav{
 .video-area .speaker-name{
     font-weight: 500;
     margin-right: 10px;
-    & + span{
-        font-weight: 300;
-        font-style: italic;
-        & + img{
-            display: block;
-            margin-top: 19px;
-            margin-bottom: 40px;
-        }
-    }
+}
+.video-area .speaker-name + span{
+    font-weight: 300;
+    font-style: italic;
+}
+.video-area .speaker-name + span + img{
+    display: block;
+    margin-top: 19px;
+    margin-bottom: 40px;
 }
 .video-area .box-video{
     border: 1px solid #D6D6D6;
@@ -327,9 +327,9 @@ nav{
     width: 51px;
     height: 51px;
     border-radius: 50%;
-    &::after{
-        font-size: 22px;
-    }
+}
+.case-studies .swiper-button-next::after, .swiper-button-prev::after{
+    font-size: 22px;
 }
 .case-studies .swiper-button-prev{
     background-color: rgba(214, 214, 214, 0.33);
@@ -621,22 +621,22 @@ footer .copyright{
         position: relative;
         padding: 24px 22px 32px;
         width: 100%;
-        h4{
-            font-size: 16px;
-            margin-bottom: 16px;
-        }
-        .form-control{
-            height: 48px;
-            margin-bottom: 12px;
-            font-size: 14px;
-        }
-        p{
-            font-size: 14px;
-        }
-        .main-btn{
-            margin-top: 26px;
-            margin-bottom: 16px;
-        }
+    }
+    .hero-form h4{
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .hero-form .form-control{
+        height: 48px;
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+    .hero-form p{
+        font-size: 14px;
+    }
+    .hero-form .main-btn{
+        margin-top: 26px;
+        margin-bottom: 16px;
     }
     .working-together .row {
         margin-bottom: 20px;
@@ -866,9 +866,9 @@ footer .copyright{
     .case-studies .swiper-button-next, .swiper-button-prev{
         width: 30px;
         height: 30px;
-        &:after{
-            font-size: 14px;
-        }
+    }
+    .case-studies .swiper-button-next:after, .swiper-button-prev:after{
+        font-size: 14px;
     }
     .case-studies .swiper-button-next{
         right: 16px;
@@ -912,9 +912,9 @@ footer .copyright{
     }
     .the-best .row{
         gap: 32px;
-        .video-area{
-            order: 2;
-        }
+    }
+    .the-best .row .video-area{
+        order: 2;
     }
     .main-anchor{
         font-size: 14px;
@@ -1066,9 +1066,9 @@ footer .copyright{
         margin-top: 20px;
         text-align: center;
         width: 100%;
-        span + img{
-            margin-inline: auto;
-        }
+    }
+    .the-best .row .video-area span + img{
+        margin-inline: auto;
     }
     .thebest-box.mr-24{
         margin-right: 24px;
